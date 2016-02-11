@@ -1,10 +1,9 @@
 ---
 layout: portfolio
-title: test
+title: CMS
 cover: /assets/test.png
-abstract: "I'm a description sample."
+type: "Web Design"
 date:   2015-12-06 14:59:29 +0800
 categories: portfolio
 ---
 
-![123]({{ site.baseurl }}/assets/test.png)

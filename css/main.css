@@ -88,7 +88,7 @@
   font-family: 'Libre Baskerville', serif;
 }
 
-/* body */
+/* body_homepage */
 body {
   margin: 0;
 }
@@ -156,6 +156,52 @@ body {
 p a {
   text-decoration: none;
   color: inherit;
+}
+
+
+/* body_post*/
+.post-image{
+  max-width: 700px;
+}
+
+#post-date {
+  color: rgba(0,0,0,0.4);
+  font-size: 14px;
+  font-family: helvetica;
+  font-weight: 300;
+}
+
+/* body_portfolio */
+.portfolio-list {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.portfolio-item {
+  height: 640px;
+}
+
+#portfolio-btn {
+  padding-top: 440px;
+  text-align: center;
+}
+
+.portfolio-btn {
+  border: 1px solid rgba(255,255,255,.75);
+  background-color: rgba(0,0,0,0);
+  border-radius: 5px;
+  color: white;
+  padding: 16px 28px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+button a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* footer */
