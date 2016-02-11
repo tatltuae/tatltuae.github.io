@@ -71,8 +71,9 @@
   font-size: 12px;
 }
 
-#nav-bar a{
+#nav-bar a, a:visited, a:hover, a:active {
   text-decoration: none;
+  color: inherit;
 }
 
 #logo-text {
