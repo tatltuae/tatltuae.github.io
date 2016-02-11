@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 title: CMS
-cover: /assets/test.png
+cover: /assets/cms.png
 type: "Web Design"
 date:   2016-02-07 14:59:29 +0800
 categories: portfolio
