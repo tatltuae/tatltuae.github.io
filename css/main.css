@@ -110,7 +110,7 @@ body {
 }
 
 .post-item {
-  padding-bottom: 24px;
+  padding-bottom: 80px;
 }
 
 .post-meta {
@@ -119,6 +119,13 @@ body {
   font-family: helvetica;
   font-weight: 300;
   text-decoration: none;
+  display: inline-block;
+  margin-top: 12px;
+  float: right;
+}
+
+#post-more {
+  float: left;
 }
 
 .post-link, .post-title {
@@ -131,6 +138,9 @@ body {
 
 .post-cover {
   display: block;
+  width: 700px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .post-abstract, .post-content {

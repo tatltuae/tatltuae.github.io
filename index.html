@@ -10,14 +10,13 @@ layout: default_jing
   <ul class="post-list">
     {% for post in site.categories['blog'] %}
       <li class="post-item">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    {% if post.cover %}
           <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-cover" src="{{ post.cover }}"></a>
+    {% else %}{% endif %}
           <p class="post-abstract"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.abstract }}</a></p>
-          <a class="post-meta" href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
-        </h2>
+          <a id="post-more" class="post-meta" href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       </li>
     {% endfor %}
   </ul>
