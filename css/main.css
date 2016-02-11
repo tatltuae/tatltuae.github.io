@@ -1,27 +1,9 @@
-/* header */
+/* header_homepage */
+
 #top {
   background-image: url('../img/bg.png');
   background-size: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-}
-
-#post-nav {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-}
-
-#nav-bar {
-  height: 88px;
-  border-bottom: 3px solid rgba(0,0,0,0);
-}
-
-#nav-bar ul {
-  list-style: none;
+  height: 100%;
 }
 
 #sub-nav {
@@ -34,6 +16,7 @@
 #sub-nav li {
   display: inline-block;
   margin-left: 28px;
+  font-family: 'Libre Baskerville', serif;
 }
 
 #sub-nav li a, a:visited, a:hover, a:active {
@@ -42,7 +25,7 @@
 }
 
 #slogan {
-  margin-bottom: 180px;
+  padding-bottom: 160px;
   text-align: center;
   /* font-family: 'Open Sans', sans-serif; */
   font-family: 'Libre Baskerville', serif;
@@ -52,23 +35,72 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 120px;
+  padding-top: 200px;
   padding-bottom: 20px;
   width: 88px;
   height: 88px;
 }
 
-#logo_text {
+
+/* header_post */
+
+#post-nav {
+  height: 54px;
+  border-bottom: 3px solid rgba(0,0,0,1);
+}
+
+#nav-bar {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 54px;
+}
+
+#nav-bar ul {
+  line-height: 54px;
+  list-style: none;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#nav-bar ul li{
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+}
+
+#nav-bar a{
+  text-decoration: none;
+}
+
+#logo-text {
   width: 32px;
+  vertical-align: middle;
+  padding-right: 12px;
+}
+
+
+#post-slogan {
+  font-size: 12px;
+  font-family: 'Libre Baskerville', serif;
 }
 
 /* body */
+body {
+  margin: 0;
+}
+
 .page-content {
-  margin-top: 600px;
-  display: block;
+  padding-top: 120px;
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
+}
+
+.post {
+  padding-bottom: 120px;
 }
 
 .post-list {
@@ -88,7 +120,7 @@
   text-decoration: none;
 }
 
-.post-link {
+.post-link, .post-title {
   color: inherit;
   text-decoration: none;
   font-family: helvetica;
@@ -96,7 +128,11 @@
   font-size: 36px;
 }
 
-.post-abstract {
+.post-cover {
+  display: block;
+}
+
+.post-abstract, .post-content {
   font-family: helvetica;
   font-weight: 300;
   font-size: 16px;
@@ -108,6 +144,7 @@
 
 p a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* footer */
@@ -121,11 +158,12 @@ p a {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
+  height: 32px;
   max-width: 700px; 
   text-align: center;
   border-top: 1px solid rgba(0,0,0,.05);
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 #footer span {
